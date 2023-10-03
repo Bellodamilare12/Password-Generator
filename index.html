@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Password Generator</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+
+        <div class="pw-container">
+            <div class="pw-header">
+            <div class="pw">
+            <span id="pw"> Password Here</span>
+            <button id="copy">Copy</button>
+            </div>
+            </div>
+            <div class="pw-body">
+            <div class="form-control">
+            <lable for="length">Password Length</lable>
+            <input id="len" value="10" type="number" min="8" max="30">
+            </div>
+            <div class="form-control">
+            <lable for="upper">Contain Uppercase Letters</lable>
+            <input id="upper" type="checkbox">
+            </div>
+            <div class="form-control">
+            <lable for="lower">Contain Lowercase Letters</lable>
+            <input id="lower" type="checkbox">
+            </div>
+            <div class="form-control">
+            <lable for="number">Contain Numbers </lable>
+            <input id="number" type="checkbox">
+            </div>
+            <div class="form-control">
+            <lable for="symbol">Contain Symbol</lable>
+            <input id="symbol" type="checkbox">
+            </div>
+            <button class="generate" id="generate">Generate Paaword</button>
+            </div>
+            </div>
+        <script src="main.js"></script>
+    </body>
+</html>
